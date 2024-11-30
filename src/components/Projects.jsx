@@ -47,7 +47,7 @@ const Projects = () => {
                 <motion.div 
                 variants={itemVariants}
                 key={index}>
-                    <Card image={item.image} title={item.title} subtitle={item.subtitle} link={item.link}/>
+                    <Card image={item.image} title={item.title} subtitle={item.subtitle} link={item.link}/> 
                 </motion.div>
             ))}
         </motion.div>
