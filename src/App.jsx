@@ -6,6 +6,9 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import { Lines } from 'react-preloaders';
+import AchievementShowcase from './components/AchievementShowcase';
+import ContactForm from './components/ContactForm';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -27,10 +30,13 @@ const App = () => {
           <About />
           <Projects />
           <Skills />
+          <AchievementShowcase />
+          <Testimonials />
+          <ContactForm />
           <Footer />
         </main>
       )}
-      <Lines color={'#ffffff'} className="w-full h-10 bg-white" time={0} animation="slide" background="linear-gradient(to bottom, #0f172a 0%, #020617 100%)" customLoading={loading} />
+      <Lines color={'#ffffff'} className="w-full h-10 bg-slate-500 rounded-md" time={0} animation="slide-left" background="linear-gradient(to bottom, #0f172a 0%, #000000 100%)" customLoading={loading} />
     </>
   );
 };
